@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.todo {
+  position: relative;
+}
+
+.todo::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  transition: all ease 1s;
+  bottom: 0.8rem;
+}
+
+.todo-completed::before {
+  width: 100%;
+}
